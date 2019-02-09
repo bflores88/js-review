@@ -109,6 +109,12 @@ b) a string and a number "three" and 3
 
 console log each variable*/
 
+var cats = 'Meow' === 'meow';
+var number = 3 === '3';
+
+console.log(cats);
+console.log(number)
+
 /*12.  Declare a literal object named "hotel" with properties and values set to:
 
     name    => "Hilton"
