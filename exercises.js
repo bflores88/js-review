@@ -222,6 +222,14 @@ console.log(Bteam);
 
 i.e. "The locaton at 0 is Tokyo."*/
 
+function prefectureIndex(prefectureArray){
+   for (let i=4; i>=0; i--){
+      console.log('The location at ' + i + ' is ' + prefectureArray[i] + '.');
+   }
+}
+
+console.log(prefectureIndex(japanPrefectures));
+
 /*18. Declare a function named addUp.
 This function will take a number parameter and add up all the numbers from 1 to that number.
 The parameter will be any number from 1 to 88.*/
