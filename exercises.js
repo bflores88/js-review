@@ -223,16 +223,28 @@ console.log(Bteam);
 i.e. "The locaton at 0 is Tokyo."*/
 
 function prefectureIndex(prefectureArray){
-   for (let i=4; i>=0; i--){
+   for (i=4; i>=0; i--){
       console.log('The location at ' + i + ' is ' + prefectureArray[i] + '.');
    }
 }
 
-console.log(prefectureIndex(japanPrefectures));
+prefectureIndex(japanPrefectures);
 
 /*18. Declare a function named addUp.
 This function will take a number parameter and add up all the numbers from 1 to that number.
 The parameter will be any number from 1 to 88.*/
+
+function addUp(num){
+   var i = 0;
+   var newNum = 0;
+   while (i<num){
+      i++;
+      newNum = newNum + i;
+   }
+   console.log(newNum);
+}
+
+addUp(Math.floor(Math.random() * (88 - 1 + 1) + 1));
 
 /*19. Declare a variable named oddNumbers and assign it to an empty array
 Use a for loop to add only odd numbers to an Array.  Add 30 odd numbers to the oddNumbers variable starting with the value of 1.*/
