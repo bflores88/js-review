@@ -249,6 +249,17 @@ addUp(Math.floor(Math.random() * (88 - 1 + 1) + 1));
 /*19. Declare a variable named oddNumbers and assign it to an empty array
 Use a for loop to add only odd numbers to an Array.  Add 30 odd numbers to the oddNumbers variable starting with the value of 1.*/
 
+let oddNumbers = [];
+function pushOddNumbers(){
+   for (let i=1; i<60; i+=2 ){
+   oddNumbers.push(i);
+}
+}
+
+pushOddNumbers();
+console.log(oddNumbers);
+
+
 /*20.  Declare a function named oldEnough.
 This function takes in a number parameter age and returns a Boolean value true or false if the age is lower than the minimum legal drinking age in the Antigua. Invoke this function by passing in a number value.  Google search Antigua's minimum drinking age to confirm the number value.  Store the return value to a variable named drinkinAlready and console log this variable*/
 
