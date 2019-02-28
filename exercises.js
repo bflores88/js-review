@@ -198,6 +198,24 @@ console.log(colorMeBadd);
 
 var roster = ["Alex", "Laura", "Sami", "Jasmine", "Adam", "Dakota", "Jonathon", "Luther", "Kevin", "Vic"];
 
+let Ateam = [];
+let Bteam = [];
+
+const assignTeam = (players) => {
+   for (let i=0; i<players.length; i++){
+      if(i%2 === 0){
+         Ateam.push(players[i])
+      } else {
+         Bteam.push(players[i]);
+      }
+   }
+}
+
+assignTeam(roster);
+
+console.log(Ateam);
+console.log(Bteam);
+
 /*17. Using the japanPrefectures array you created in exercise 5, create a for loop that iterates through this array and console logs the following message:
 
 "The location at i is:  ."  and append the value of i and the value stored within the Array at that index to this string.
