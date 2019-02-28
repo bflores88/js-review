@@ -159,7 +159,7 @@ Add a property named contents and set it to be an empty array
 
 console log the object*/
 
-const bigBox = {};
+let bigBox = {};
 
 bigBox.size = Math.floor(Math.random() * (50 - 0 + 1));
 bigBox.color = 'black';
@@ -271,6 +271,18 @@ const oldEnough = age => {
 oldEnough(15);
 
 /*21. Declare a function named contentFiller which takes in a single parameter which will be an object.  Write a for loop that will put 5 random numbers between the values of 0 to 20 in the contents array in the bigBox object you created in exercise 14.  Console log the result.*/
+
+function contentFiller(anObject){
+   for (var i = 0; i<5; i++){
+      var addNum = Math.floor(Math.random() * (20 - 0 + 1));
+      anObject.contents.push(addNum);
+   }
+
+}
+
+contentFiller(bigBox);
+console.log(bigBox);
+
 
 /*22.  Declare a function named firstReverse which takes a single parameter str.  This function will take a string parameter being passed in and return the string in reverse order.*/
 
