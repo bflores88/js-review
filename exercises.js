@@ -302,3 +302,16 @@ const letterCap = str => {
 console.log(letterCap('butterfly'));
 
 /*24. Declare a function named longestWord which takes a single parameter str. This function will return the longest word in the string when you invoke this function.*/ 
+
+const longestWord = str => {
+   var strSplit = str.split(' ');
+   var longest = 0;
+   for (var i = 0; i<strSplit.length; i++){
+      if(strSplit[i].length > longest){
+         longest = strSplit[i].length;
+      }
+   }
+   return longest;
+}
+
+console.log(longestWord('It is a wonderful world.'))
